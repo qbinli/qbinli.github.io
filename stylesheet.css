@@ -81,32 +81,33 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;      
+  font-weight: 1000;      
 }
 
-h2 {
-  margin: 0;
-  font-weight: normal;
+heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 
-.papertitle {
+papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 700
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
+heading {
+  display: block;
+}
+
+name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 34px;
 }
 
 .one {
@@ -134,9 +135,25 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+/* 统一所有 heading 标题与其下面内容之间的距离 */
+heading {
+  display: block;
+  margin: 0 0 12px 0;   /* 下方留 12px，可按需调整 */
+}
+
+/* 去掉 ul 的默认上下 margin，避免 News 区域距离更大 */
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 统一标题：深蓝文字 + 细黑横线 */
+heading {
+  display: block;
+  font-size: 24px;
+  color: #1A4A80;              /* 深蓝色标题文字 */
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  border-bottom: 1px solid #000;  /* 细黑线 */
+  padding-bottom: 3px;         /* 文字与线的距离，改小一点 */
 }
